@@ -1,0 +1,9 @@
+/Users/gregorye1/Desktop/repos/BMICalculator/BMICalculator/bin/iPhoneSimulator/Debug/BMICalculator.exe
+/Users/gregorye1/Desktop/repos/BMICalculator/BMICalculator/bin/iPhoneSimulator/Debug/BMICalculator.pdb
+/Users/gregorye1/Desktop/repos/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3.1/ibtool/_BundleResourceWithLogicalName.items
+/Users/gregorye1/Desktop/repos/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3.1/actool/_PartialAppManifest.items
+/Users/gregorye1/Desktop/repos/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3.1/actool/_BundleResourceWithLogicalName.items
+/Users/gregorye1/Desktop/repos/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3.1/optimized/
+/Users/gregorye1/Desktop/repos/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/BMICalculator.csproj.CoreCompileInputs.cache
+/Users/gregorye1/Desktop/repos/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/BMICalculator.exe
+/Users/gregorye1/Desktop/repos/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/BMICalculator.pdb
