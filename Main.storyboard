@@ -31,7 +31,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="387" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="20" y="421" width="336" height="39"/>
+                                <rect key="frame" x="20" y="299" width="336" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" colorSpace="calibratedRGB" red="0" green="1" blue="1" alpha="1"/>
                                 <nil key="highlightedColor"/>
@@ -52,6 +52,24 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2571" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="124" y="518" width="128" height="30"/>
+                                <state key="normal" title="Show Details">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="4516" destination="4225" kind="show"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5584" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="164" y="597" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="5639" destination="3720" kind="show"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <variation key="default">
                             <mask key="subviews">
@@ -61,6 +79,8 @@
                                 <exclude reference="388"/>
                                 <exclude reference="389"/>
                                 <exclude reference="597"/>
+                                <exclude reference="2571"/>
+                                <exclude reference="5584"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -71,6 +91,8 @@
                                 <include reference="388"/>
                                 <include reference="389"/>
                                 <include reference="597"/>
+                                <include reference="2571"/>
+                                <include reference="5584"/>
                             </mask>
                         </variation>
                     </view>
@@ -90,16 +112,90 @@
             <objects>
                 <navigationController id="849" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="851">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue id="949" destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController"/>
+                        <segue id="2878" destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="852" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-790" y="6"/>
+        </scene>
+        <scene sceneID="3719">
+            <objects>
+                <viewController id="3720" sceneMemberID="viewController" customClass="NewViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3717"/>
+                        <viewControllerLayoutGuide type="bottom" id="3718"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3721">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Normal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4012" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="116" y="308" width="143" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0" green="1" blue="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="4012"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="4012"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="newDetailLabel" destination="4012" id="name-outlet-4012"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3722" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112" y="7"/>
+        </scene>
+        <scene sceneID="4224">
+            <objects>
+                <viewController id="4225" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4222"/>
+                        <viewControllerLayoutGuide type="bottom" id="4223"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4226">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5363" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="166" y="208" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="5363"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="5363"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4227" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8" y="721"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
